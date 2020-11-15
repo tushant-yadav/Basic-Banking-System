@@ -68,6 +68,9 @@ header .navbar ul{
  	margin-left: 35px;
 
  }
+ header .navbar ul li:hover{
+    background-color: white;
+}
 
 
   header .navbar ul li a{
@@ -125,6 +128,7 @@ header .navbar ul{
  	transition: all .8s ease;
  
  }
+
  .home .home-content .block h3{
  	color:whitesmoke;
  	font-size: 25px;
@@ -226,7 +230,30 @@ header .navbar ul{
  
 
 .home{
-	background-image: url(camm.jpg);
+	background-image: url(index.jpg);
 }
 
+}
+
+
+footer{
+    background-color: #fff;
+}
+
+.social-icons li{
+    list-style: none;
+    display: inline;
+    padding: 0.5rem;
+}
+
+.github{
+    color: #24292e;
+}
+
+.linkedin{
+    color: #0077b5;
+}
+
+.google{
+    color: #D44638;
 }
