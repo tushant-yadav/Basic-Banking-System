@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>landing page</title>
+	<title>Money Transfer Portal</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="landing.css">
+	<link rel="stylesheet" type="text/css" href="landing.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
+<body onload="loader()">
+
+	<!-- loader for splash screen -->
+	<div id="loading"></div>
+  
 
 <!--header start-->
 <header>
@@ -24,10 +31,8 @@
 		<div class="navbar" id="navbarto">
 			<ul>
 				<li><a href="landing.html" >Home</a></li>
-				<li><a href="#" >About</a></li>
-				<li><a href="#" >Services</a></li>
-				<li><a href="#" >Work</a></li>
-				<li><a href="#" >Contact</a></li>
+				<li><a href="https://www.thesparksfoundationsingapore.org/" >About</a></li>
+				<li><a href="#" >Transfer Money</a></li>
 			</ul>
 			
 		</div>
@@ -57,6 +62,26 @@
 	
 </section>
 
+    <!-- footer starts here -->
+    <footer>
+		<hr>
+		<div class="row text-center">
+		  <div class="col-md-6">
+			<p>This project is made under <a href="https://www.thesparksfoundationsingapore.org">The Sparks Foundation</a> by Tushant Yadav.</p>
+			
+		  </div>
+		  <div class="col-md-6 text-center">
+			  <ul class="social-icons">
+				Contact Me:
+				<li><a target="_blank" class="github" href="https://github.com/tushant-yadav"><i class="fab fa-github fa-2x"></i></a></li>
+				<li><a target="_blank" class="google" href="mailto:tushanty000@gmail.com"><i class="fab fa-google fa-2x"></i></a></li>
+				<li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/tushant-yadav/"><i class="fab fa-linkedin fa-2x"></i></a></li>   
+			  </ul>
+		  </div>
+		</div>
+	  </footer>
+	  <!-- footer ends here -->
+
 
 
 
@@ -69,6 +94,13 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<script>
+	var preloader = document.getElementById("loading");
+	function loader(){
+	  preloader.style.display = 'none';
+	}
+  </script>
 
 </body>
 </html>
